@@ -213,6 +213,11 @@ nav ul li a{
     margin-left: 0;
     padding-left: 0;
   }
+  .featured_img img{
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+  }
   .header_title{
     width: 100%;
   }
@@ -227,6 +232,7 @@ nav ul li a{
     grid-template-columns: 1fr;
   }
   .social{
+    width: 70%;
     margin-left: 25%;
   }
 }
