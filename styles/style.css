@@ -1,0 +1,94 @@
+/* Poppins font from Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Header Section */
+header{
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .title h4{
+  color: #3A3A3A;
+  font-size: 24px;
+  font-weight: 700;
+}
+nav{
+  text-align: center;
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  margin-left: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.header_title h3{
+  color: #3A3A3A;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.header_title p{
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header_title button{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 41px;
+  background: #E02C6D;
+  gap: 10px;
+  padding: 10px 24px;
+}
+.header_title{
+  width: 50%;
+}
+.main_header{
+  display: flex;
+  justify-content: space-between;
+}
+.header_logo img{
+  width: 440px;
+  height: 414px;
+  background-image: url('../images/Circle\ design.svg');
+}
+
+
+
+
+/* Media Quari for Small devise */
+@media screen and (max-width:576px) {
+  .navbar , .main_header{
+    flex-direction: column;
+  }
+  header{
+    text-align: center;
+  }
+  .main_header{
+    flex-direction: column-reverse;
+  }
+  .header_title{
+    width: 80%;
+  }
+  .header_logo img{
+    width: 202px;
+    height: 190px;
+  }
+}
