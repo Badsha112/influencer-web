@@ -128,17 +128,57 @@ nav ul li a{
   width: 80%;
   margin: 0 auto;
 }
-
+/* Featured products at one place */
+.Featured{
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  text-align: center;
+}
+.featured_img img{
+  width: 410px;
+  height: 290px;
+  border-radius: 10px;
+}
+.featured_text{
+  padding-left: 100px;
+}
+.featured_text h3{
+  color: #0A0826;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.featured_text p{
+  color: #6C6C6C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.featured_text button{
+  color: #FFF;
+  background: #E02C6D;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+}
 /* Media Quari for Small devise */
 @media screen and (max-width:576px) {
-  .navbar , .main_header{
+  .navbar , .main_header ,
+  .Featured{
     flex-direction: column;
   }
   header{
     text-align: center;
   }
-  .main_header{
+  .main_header , .Featured{
     flex-direction: column-reverse;
+  }
+  .featured_text{
+    margin-left: 0;
+    padding-left: 0;
   }
   .header_title{
     width: 100%;
@@ -153,4 +193,5 @@ nav ul li a{
   .collection_item{
     grid-template-columns: 1fr;
   }
+  
 }
